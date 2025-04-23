@@ -32,6 +32,10 @@
 		B9F21C922DB58FA500F5BD06 /* LeaderboardEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F21C902DB58FA500F5BD06 /* LeaderboardEntry.swift */; };
 		B9F21C942DB58FB700F5BD06 /* DiamondShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F21C932DB58FB700F5BD06 /* DiamondShape.swift */; };
 		B9F21C972DB5935E00F5BD06 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F21C962DB5935E00F5BD06 /* ImagePicker.swift */; };
+		D3EF77F92DB89A4D00DC987F /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF77F82DB89A4B00DC987F /* NavigationBar.swift */; };
+		D3EF77FB2DB89A7E00DC987F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF77FA2DB89A7C00DC987F /* ProfileView.swift */; };
+		D3EF77FD2DB89B0B00DC987F /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF77FC2DB89B0800DC987F /* MainContentView.swift */; };
+		D3EF78012DB8A29300DC987F /* ItemRevealOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EF78002DB8A28F00DC987F /* ItemRevealOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +84,10 @@
 		B9F21C902DB58FA500F5BD06 /* LeaderboardEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardEntry.swift; sourceTree = "<group>"; };
 		B9F21C932DB58FB700F5BD06 /* DiamondShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondShape.swift; sourceTree = "<group>"; };
 		B9F21C962DB5935E00F5BD06 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		D3EF77F82DB89A4B00DC987F /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		D3EF77FA2DB89A7C00DC987F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D3EF77FC2DB89B0800DC987F /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		D3EF78002DB8A28F00DC987F /* ItemRevealOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRevealOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -153,6 +161,10 @@
 		B9F21C792DB58E0500F5BD06 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D3EF78002DB8A28F00DC987F /* ItemRevealOverlay.swift */,
+				D3EF77FC2DB89B0800DC987F /* MainContentView.swift */,
+				D3EF77FA2DB89A7C00DC987F /* ProfileView.swift */,
+				D3EF77F82DB89A4B00DC987F /* NavigationBar.swift */,
 				B9F21C7D2DB58E4D00F5BD06 /* SignupView.swift */,
 				B9F21C882DB58F8800F5BD06 /* HomeView.swift */,
 				B9F21C892DB58F8800F5BD06 /* ItemRevealView.swift */,
@@ -356,6 +368,7 @@
 			files = (
 				3FE60EEC2DB7D083004FCB29 /* PhotoItemView.swift in Sources */,
 				B9F21C912DB58FA500F5BD06 /* DailyItem.swift in Sources */,
+				D3EF78012DB8A29300DC987F /* ItemRevealOverlay.swift in Sources */,
 				3FE60EE22DB7D063004FCB29 /* CachedImageManager.swift in Sources */,
 				B9F21C922DB58FA500F5BD06 /* LeaderboardEntry.swift in Sources */,
 				3FE60EEE2DB7D087004FCB29 /* PhotoLibrary.swift in Sources */,
@@ -365,6 +378,8 @@
 				3FE60EDC2DB7D04A004FCB29 /* CameraView.swift in Sources */,
 				3FE60EF02DB7D08C004FCB29 /* PhotoView.swift in Sources */,
 				B9F21C802DB58EDE00F5BD06 /* AuthViewModel.swift in Sources */,
+				D3EF77FB2DB89A7E00DC987F /* ProfileView.swift in Sources */,
+				D3EF77F92DB89A4D00DC987F /* NavigationBar.swift in Sources */,
 				3FE60EDE2DB7D055004FCB29 /* DataModel.swift in Sources */,
 				B9F21C7E2DB58E4D00F5BD06 /* SignupView.swift in Sources */,
 				3FE60EEA2DB7D07D004FCB29 /* PhotoCollectionView.swift in Sources */,
@@ -379,6 +394,7 @@
 				3FE60EE42DB7D06B004FCB29 /* PhotoAsset.swift in Sources */,
 				B9F21C852DB58F6D00F5BD06 /* LeaderboardViewModel.swift in Sources */,
 				B9F21C862DB58F6D00F5BD06 /* DailyItemViewModel.swift in Sources */,
+				D3EF77FD2DB89B0B00DC987F /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FindItApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7M3RRWFCV5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for capturing photos";
@@ -568,6 +585,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FindItApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7M3RRWFCV5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is used for capturing photos";
