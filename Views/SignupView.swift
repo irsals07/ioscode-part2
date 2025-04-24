@@ -160,3 +160,7 @@ struct SignupView: View {
         }
     }
 }
+
+#Preview {
+    SignupView()
+}

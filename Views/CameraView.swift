@@ -53,20 +53,19 @@ struct CameraView: View {
             Spacer()
             
             NavigationLink {
-                PhotoCollectionView(photoCollection: model.photoCollection)
-                    .onAppear {
-                        model.camera.isPreviewPaused = true
-                    }
-                    .onDisappear {
-                        model.camera.isPreviewPaused = false
-                    }
+                ProfileView()
             } label: {
-                Label {
-                    Text("Gallery")
-                } icon: {
-                    ThumbnailView(image: model.thumbnailImage)
+                VStack(spacing: 4) {
+                    Image(systemName: "house.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24)
+                    Text("Home")
+                        .font(.caption)
                 }
+                .foregroundColor(.gray)
             }
+
             
             Button {
                 model.camera.takePhoto()
