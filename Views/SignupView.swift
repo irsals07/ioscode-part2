@@ -114,7 +114,7 @@ struct SignupView: View {
                         appState.isSignedIn = true
                     }
                 } label: {
-                    Text("Sign Up")
+                    Text("Sign In")
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
@@ -134,7 +134,7 @@ struct SignupView: View {
                 
                 // Already have an account
                 HStack {
-                    Text("Already have an account?")
+                    Text("Don't have an account?")
                         .foregroundColor(.gray)
                     
                     Button {
@@ -143,7 +143,7 @@ struct SignupView: View {
                             appState.isSignedIn = true
                         }
                     } label: {
-                        Text("Sign In")
+                        Text("Sign Up")
                             .fontWeight(.medium)
                             .foregroundColor(.blue)
                     }

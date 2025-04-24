@@ -6,7 +6,10 @@ import SwiftUI
 
 struct CameraView: View {
     @StateObject private var model = DataModel()
- 
+    @EnvironmentObject private var appState: AppState
+    @State private var selectedTab: NavigationBar.Tab = .home
+
+    
     private static let barHeightFactor = 0.15
     
     
@@ -53,7 +56,7 @@ struct CameraView: View {
             Spacer()
             
             NavigationLink {
-                ProfileView()
+                MainContentView()
             } label: {
                 VStack(spacing: 4) {
                     Image(systemName: "house.fill")

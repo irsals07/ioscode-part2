@@ -11,7 +11,7 @@ struct NavigationBar: View {
     @Binding var selectedTab: Tab
     
     enum Tab {
-        case home, camera, leaderboard, profile
+        case home, camera, leaderboard, profile, maincontentview
     }
     
     var body: some View {

@@ -11,6 +11,8 @@ struct MainContentView: View {
     @EnvironmentObject private var appState: AppState
     @State private var showItemRevealOverlay = false
     
+
+    
     var body: some View {
         ZStack {
             // Content based on selected tab
@@ -19,10 +21,13 @@ struct MainContentView: View {
                     HomeView(showItemRevealOverlay: $showItemRevealOverlay)
                 } else if appState.selectedTab == .camera {
                     CameraView()
+                        .environmentObject(AppState())
                 } else if appState.selectedTab == .leaderboard {
                     LeaderboardView()
                 } else if appState.selectedTab == .profile {
                     ProfileView()
+                } else if appState.selectedTab == .maincontentview {
+                    MainContentView()
                 }
             }
             
